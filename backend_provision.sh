@@ -164,9 +164,6 @@ sed -i '/^    server {/,/^    }/d' "$CONFIG_FILE_PATH"
 # uncomment error logs
 sed -i 's/#\(error_log\)/\1/' "$CONFIG_FILE_PATH"
 
-echo "Extracting html.tar.gz..."
-tar xzf /vagrant/html.tar.gz -C "${INSTALL_PATH%/}/html/" --strip-components=1
-
 echo "Starting nginx.service..."
 sudo systemctl start nginx
 echo "The end :)"
