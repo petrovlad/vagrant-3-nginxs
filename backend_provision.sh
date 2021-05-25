@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# DEBUG ONLY
-sudo yum -y install vim > /dev/null
-
 # 1st parameter - URL
 # 2nd parameter - resource name; name of folder in extract path
 # 3rd parameter - dir to extract
